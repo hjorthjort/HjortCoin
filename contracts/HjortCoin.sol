@@ -3,7 +3,10 @@ pragma solidity ^0.4.17;
 // Imports.
 import "./SafeMath.sol";
 
-// An ERC20 token.
+/** 
+  * An ERC20 token.
+  * The standard unit of HjortCoin is 1 deer. The smallest unit i 1 fawn, 10^18 fawn being 1 deer.
+  */
 contract HjortCoin {
     // Constants.
     string public name;
