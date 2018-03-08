@@ -42,7 +42,7 @@ contract HjortCoin {
         balanceOf[msg.sender] = totalSupply;
     }
 
-    function inFawn(uint256 coins) private view returns (uint256 coinInDecimals){
+    function inFawn(uint256 coins) public view returns (uint256 coinInDecimals){
         return SafeMath.mul(coins, 10 ** uint256(decimals));
     }
 
