@@ -38,11 +38,11 @@ contract HjortCoin {
         decimals = _decimals;
 
         // Grant all tokens to creator.
-        totalSupply = coinToDecimals(_initialSupply);
+        totalSupply = inFawn(_initialSupply);
         balanceOf[msg.sender] = totalSupply;
     }
 
-    function coinToDecimals(uint256 coins) private view returns (uint256 coinInDecimals){
+    function inFawn(uint256 coins) private view returns (uint256 coinInDecimals){
         return SafeMath.mul(coins, 10 ** uint256(decimals));
     }
 
