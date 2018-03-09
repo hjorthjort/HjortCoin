@@ -20,7 +20,7 @@ contract HjortCoinTest {
         hc.transfer(a, 10);
         Assert.equal(hc.balanceOf(a), 10, "Receiver should now have 10 coins.");
 
-        // Edge case check. We empty the account except for 1 fawn. We then ensure transaction works before, but not after, using identical calls.
+        // Edge case check. We empty the account except for 1 fawn. We then ensure transaction works before, but not after, using identical calls. Using the hc.call function rather than calling hc.transfer lets us read the return value to see if the execution succeeded.
         // Step 1. Empty all coins in the account except for 1 fawn.
         hc.transfer(a, 9001 * 10 ** 18 - 11);
 
