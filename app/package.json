@@ -1,0 +1,23 @@
+{
+  "name": "hjortcoin-app",
+  "version": "1.0.0",
+  "description": "Frontend for Hjortcoin",
+  "main": "index.js",
+  "scripts": {
+    "test": "test-app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hjorthjort/HjortCoin.git"
+  },
+  "keywords": [
+    "hjortcoin",
+    "smart-contract"
+  ],
+  "author": "Rikard Hjort",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hjorthjort/HjortCoin/issues"
+  },
+  "homepage": "https://github.com/hjorthjort/HjortCoin#readme"
+}

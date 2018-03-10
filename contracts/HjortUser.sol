@@ -17,6 +17,14 @@ contract HjortUser {
         hjortCoinAddress = _hjortCoinAddress;
     }
 
+    function getUsersCount() public view returns (uint256 count) {
+        return users.length;
+    }
+
+    function getUserAt(uint256 idx) public view returns (bytes32 name, address account) {
+        return (users[idx].username, users[idx].account);
+    }
+
     function register(bytes32 _username) public returns (bool success) {
         for (uint256 i; i < users.length; i++) {
             if (users[i].username == _username) {
